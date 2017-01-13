@@ -32,4 +32,7 @@ class VerificationCodeViewController: UIViewController {
     }
     */
 
+  @IBAction func nextStep(_ sender: Any) {
+    performSegue(withIdentifier: SegueIdentifier.fourthStep.rawValue, sender: nil)
+  }
 }

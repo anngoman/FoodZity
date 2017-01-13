@@ -31,5 +31,9 @@ class PhoneAcceptViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  @IBAction func nextStep(_ sender: Any) {
+    performSegue(withIdentifier: SegueIdentifier.verificationCode.rawValue, sender: nil)
+
+  }
 
 }

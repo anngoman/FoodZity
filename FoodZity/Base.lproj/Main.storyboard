@@ -94,7 +94,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndH-zM-BNN">
-                                                <rect key="frame" x="130" y="497" width="116" height="29"/>
+                                                <rect key="frame" x="130" y="477" width="116" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <state key="normal" title="Forgot password?">
                                                     <color key="titleColor" red="0.76078431372549016" green="0.76078431372549016" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
@@ -147,10 +147,10 @@
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quo-cE-ALi">
-                                                <rect key="frame" x="40" y="369" width="295" height="54"/>
+                                                <rect key="frame" x="40" y="369" width="295" height="44"/>
                                                 <color key="backgroundColor" red="0.48627450979999998" green="0.70196078429999997" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="54" id="n1p-mw-ikQ"/>
+                                                    <constraint firstAttribute="height" constant="44" id="n1p-mw-ikQ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                 <state key="normal" title="Login">
@@ -163,10 +163,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJi-J2-OnY">
-                                                <rect key="frame" x="40" y="431" width="295" height="54"/>
+                                                <rect key="frame" x="40" y="421" width="295" height="44"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="54" id="P2K-EP-8Oh"/>
+                                                    <constraint firstAttribute="height" constant="44" id="P2K-EP-8Oh"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                 <state key="normal" title="Register">

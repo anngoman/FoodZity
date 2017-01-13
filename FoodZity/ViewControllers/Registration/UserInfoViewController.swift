@@ -32,4 +32,8 @@ class UserInfoViewController: UIViewController {
     }
     */
 
+  @IBAction func nextStep(_ sender: Any) {
+    performSegue(withIdentifier: SegueIdentifier.thirdStep.rawValue, sender: nil)
+  }
+ 
 }

@@ -31,5 +31,9 @@ class RegistrationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+  
+  @IBAction func nextStep(_ sender: Any) {
+    performSegue(withIdentifier: SegueIdentifier.secondStep.rawValue, sender: nil)
+  }
 
 }
