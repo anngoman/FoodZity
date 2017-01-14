@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C41071E74A9E4413E2B49BD1DD08CD93F4CD454B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "1EC8E0DC4C5079B11EE027DBC72E987F794C3A9C" : 9223372036854775807,
+    "C41071E74A9E4413E2B49BD1DD08CD93F4CD454B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "63D02EA2-6112-4263-8B72-6934F7831200",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "1EC8E0DC4C5079B11EE027DBC72E987F794C3A9C" : "..\/Exit",
+    "C41071E74A9E4413E2B49BD1DD08CD93F4CD454B" : "FoodZity\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FoodZity",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FoodZity.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/anna_goman\/exit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1EC8E0DC4C5079B11EE027DBC72E987F794C3A9C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/anngoman\/FoodZity.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C41071E74A9E4413E2B49BD1DD08CD93F4CD454B"
+    }
+  ]
+}

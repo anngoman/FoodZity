@@ -22,18 +22,16 @@ class RegistrationViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ // MARK: - Actions
   
   @IBAction func nextStep(_ sender: Any) {
     performSegue(withIdentifier: SegueIdentifier.secondStep.rawValue, sender: nil)
   }
+  
+  @IBAction func showInfo(_ sender: Any) {
+    let infoAlert = ViewController.alert.instance(fromStoryboard: Storyboard.registration.instance)
+    present(infoAlert, animated: false, completion: nil)
+  }
+  
 
 }

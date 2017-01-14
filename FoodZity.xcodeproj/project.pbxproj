@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE42E2F71E292DCE00BE1C60 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42E2F61E292DCE00BE1C60 /* ResponsiveTextFieldViewController.swift */; };
+		CE42E2F91E29335F00BE1C60 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42E2F81E29335F00BE1C60 /* AlertViewController.swift */; };
 		CE63521A1E2774790047A870 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6352191E2774790047A870 /* CheckBox.swift */; };
 		CE63521E1E2899420047A870 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63521D1E2899420047A870 /* LoginViewController.swift */; };
 		CEDC3D701E24C554003168EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC3D6F1E24C554003168EA /* AppDelegate.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE42E2F61E292DCE00BE1C60 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponsiveTextFieldViewController.swift; path = ../../../../Exit/Exit/ViewControllers/Login/ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
+		CE42E2F81E29335F00BE1C60 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		CE6352191E2774790047A870 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		CE63521D1E2899420047A870 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEDC3D6C1E24C554003168EA /* FoodZity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodZity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +103,7 @@
 		CEDC3D821E24C741003168EA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE42E2F61E292DCE00BE1C60 /* ResponsiveTextFieldViewController.swift */,
 				CEDC3D861E24C7D6003168EA /* Registration */,
 				CEDC3D851E24C7CC003168EA /* Login */,
 			);
@@ -130,6 +135,7 @@
 				CEDC3D901E25140D003168EA /* PhoneAcceptViewController.swift */,
 				CEDC3D921E251426003168EA /* SelectStoresViewController.swift */,
 				CEF1EA081E2649CC00C8C518 /* VerificationCodeViewController.swift */,
+				CE42E2F81E29335F00BE1C60 /* AlertViewController.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE42E2F71E292DCE00BE1C60 /* ResponsiveTextFieldViewController.swift in Sources */,
 				CEDC3D911E25140D003168EA /* PhoneAcceptViewController.swift in Sources */,
 				CEDC3D8D1E2513F3003168EA /* RegistrationViewController.swift in Sources */,
 				CEDC3D931E251426003168EA /* SelectStoresViewController.swift in Sources */,
@@ -241,6 +248,7 @@
 				CEDC3D8F1E251403003168EA /* UserInfoViewController.swift in Sources */,
 				CEDC3D951E254FB0003168EA /* Constants.swift in Sources */,
 				CEDC3D701E24C554003168EA /* AppDelegate.swift in Sources */,
+				CE42E2F91E29335F00BE1C60 /* AlertViewController.swift in Sources */,
 				CE63521E1E2899420047A870 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

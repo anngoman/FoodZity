@@ -70,7 +70,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdu-5Y-cBb">
-                                                        <rect key="frame" x="144" y="51" width="68" height="28"/>
+                                                        <rect key="frame" x="148.5" y="51" width="68" height="28"/>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                                         <state key="normal" title="Contact us">
                                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,7 +85,7 @@
                                                     <constraint firstAttribute="bottom" secondItem="IvL-OW-Abm" secondAttribute="bottom" constant="8" id="9Jr-wO-6rt"/>
                                                     <constraint firstItem="yJh-Ie-yI4" firstAttribute="height" secondItem="OMy-fq-ThG" secondAttribute="height" id="Cqb-gh-DQy"/>
                                                     <constraint firstItem="IvL-OW-Abm" firstAttribute="top" secondItem="OMy-fq-ThG" secondAttribute="top" constant="20" id="NDJ-Jw-zfJ"/>
-                                                    <constraint firstItem="rdu-5Y-cBb" firstAttribute="centerX" secondItem="OMy-fq-ThG" secondAttribute="centerX" constant="-10" id="On2-aq-CYf"/>
+                                                    <constraint firstItem="rdu-5Y-cBb" firstAttribute="centerX" secondItem="OMy-fq-ThG" secondAttribute="centerX" constant="-5" id="On2-aq-CYf"/>
                                                     <constraint firstAttribute="trailing" secondItem="yJh-Ie-yI4" secondAttribute="trailing" id="XlU-Hp-9HN"/>
                                                     <constraint firstItem="rdu-5Y-cBb" firstAttribute="top" secondItem="bnx-IR-Sb8" secondAttribute="bottom" id="fqq-OS-G0m"/>
                                                     <constraint firstAttribute="trailing" secondItem="IvL-OW-Abm" secondAttribute="trailing" constant="25" id="s3r-kG-9kC"/>
@@ -188,17 +188,17 @@
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="8a9-E7-Tzz">
-                                                <rect key="frame" x="351" y="248" width="12" height="12"/>
+                                                <rect key="frame" x="347" y="246" width="16" height="16"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="12" id="07Z-ON-Wc0"/>
-                                                    <constraint firstAttribute="width" constant="12" id="1Ix-fr-32S"/>
+                                                    <constraint firstAttribute="height" constant="16" id="07Z-ON-Wc0"/>
+                                                    <constraint firstAttribute="width" constant="16" id="1Ix-fr-32S"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_faild" translatesAutoresizingMaskIntoConstraints="NO" id="mBy-Av-mXx">
-                                                <rect key="frame" x="351" y="315" width="12" height="12"/>
+                                                <rect key="frame" x="347" y="313" width="16" height="16"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="12" id="fuR-xp-6Ij"/>
-                                                    <constraint firstAttribute="height" constant="12" id="nIg-Mb-23u"/>
+                                                    <constraint firstAttribute="width" constant="16" id="fuR-xp-6Ij"/>
+                                                    <constraint firstAttribute="height" constant="16" id="nIg-Mb-23u"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>

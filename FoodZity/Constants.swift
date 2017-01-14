@@ -22,6 +22,15 @@ enum Storyboard: String {
   
 }
 
+enum ViewController: String {
+  case alert = "AlertVC"
+  
+  func instance(fromStoryboard storyBoard: UIStoryboard) -> UIViewController {
+    return storyBoard.instantiateViewController(withIdentifier: self.rawValue)
+  }
+}
+
+
 enum SegueIdentifier: String {
   case secondStep = "SecondStepSegue"
   case thirdStep = "ThirdStepSegue"

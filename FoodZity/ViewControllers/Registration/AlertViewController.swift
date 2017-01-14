@@ -1,14 +1,14 @@
 //
-//  SelectStoresViewController.swift
+//  AlertViewController.swift
 //  FoodZity
 //
-//  Created by Anna Goman on 10.01.17.
+//  Created by Anna Goman on 13.01.17.
 //  Copyright © 2017 Anna Goman. All rights reserved.
 //
 
 import UIKit
 
-class SelectStoresViewController: UIViewController {
+class AlertViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +22,10 @@ class SelectStoresViewController: UIViewController {
     }
     
 
-    // MARK: - Actions
+   // MARK: - Actions
   
-  @IBAction func showInfo(_ sender: Any) {
-    let infoAlert = ViewController.alert.instance(fromStoryboard: Storyboard.registration.instance)
-    present(infoAlert, animated: false, completion: nil)
+  @IBAction func close(_ sender: Any) {
+    dismiss(animated: false, completion: nil)
   }
   
 
