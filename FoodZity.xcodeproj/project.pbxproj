@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE42E2F71E292DCE00BE1C60 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42E2F61E292DCE00BE1C60 /* ResponsiveTextFieldViewController.swift */; };
+		17629F581E2D729700D230A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17629F571E2D729700D230A6 /* AppDelegate.swift */; };
+		17629F5B1E2D72A700D230A6 /* FZUIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17629F5A1E2D72A700D230A6 /* FZUIHelper.swift */; };
+		17629F5D1E2D72CE00D230A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17629F5C1E2D72CE00D230A6 /* Main.storyboard */; };
+		17629F5F1E2D72DF00D230A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17629F5E1E2D72DF00D230A6 /* LoginViewController.swift */; };
 		CE42E2F91E29335F00BE1C60 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE42E2F81E29335F00BE1C60 /* AlertViewController.swift */; };
 		CE63521A1E2774790047A870 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6352191E2774790047A870 /* CheckBox.swift */; };
-		CE63521E1E2899420047A870 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63521D1E2899420047A870 /* LoginViewController.swift */; };
-		CEDC3D701E24C554003168EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDC3D6F1E24C554003168EA /* AppDelegate.swift */; };
-		CEDC3D751E24C554003168EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC3D731E24C554003168EA /* Main.storyboard */; };
 		CEDC3D771E24C554003168EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDC3D761E24C554003168EA /* Assets.xcassets */; };
 		CEDC3D7A1E24C554003168EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC3D781E24C554003168EA /* LaunchScreen.storyboard */; };
 		CEDC3D891E24C80D003168EA /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDC3D871E24C80D003168EA /* Registration.storyboard */; };
@@ -27,13 +27,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE42E2F61E292DCE00BE1C60 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponsiveTextFieldViewController.swift; path = ../../../../Exit/Exit/ViewControllers/Login/ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
+		17629F571E2D729700D230A6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17629F5A1E2D72A700D230A6 /* FZUIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FZUIHelper.swift; sourceTree = "<group>"; };
+		17629F5C1E2D72CE00D230A6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		17629F5E1E2D72DF00D230A6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE42E2F81E29335F00BE1C60 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		CE6352191E2774790047A870 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
-		CE63521D1E2899420047A870 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEDC3D6C1E24C554003168EA /* FoodZity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodZity.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEDC3D6F1E24C554003168EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEDC3D741E24C554003168EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEDC3D761E24C554003168EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEDC3D791E24C554003168EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEDC3D7B1E24C554003168EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17629F591E2D72A700D230A6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				17629F5A1E2D72A700D230A6 /* FZUIHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CEDC3D631E24C553003168EA = {
 			isa = PBXGroup;
 			children = (
@@ -78,14 +86,15 @@
 		CEDC3D6E1E24C554003168EA /* FoodZity */ = {
 			isa = PBXGroup;
 			children = (
+				17629F591E2D72A700D230A6 /* Helpers */,
 				CEF1EA0B1E26522300C8C518 /* Extensions */,
 				CEDC3D831E24C752003168EA /* Views */,
 				CEDC3D821E24C741003168EA /* ViewControllers */,
 				CEDC3D811E24C729003168EA /* Storyboards */,
-				CEDC3D6F1E24C554003168EA /* AppDelegate.swift */,
 				CEDC3D941E254FB0003168EA /* Constants.swift */,
 				CEDC3D761E24C554003168EA /* Assets.xcassets */,
 				CEDC3D781E24C554003168EA /* LaunchScreen.storyboard */,
+				17629F571E2D729700D230A6 /* AppDelegate.swift */,
 				CEDC3D7B1E24C554003168EA /* Info.plist */,
 			);
 			path = FoodZity;
@@ -94,7 +103,7 @@
 		CEDC3D811E24C729003168EA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				CEDC3D731E24C554003168EA /* Main.storyboard */,
+				17629F5C1E2D72CE00D230A6 /* Main.storyboard */,
 				CEDC3D871E24C80D003168EA /* Registration.storyboard */,
 			);
 			name = Storyboards;
@@ -103,7 +112,6 @@
 		CEDC3D821E24C741003168EA /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CE42E2F61E292DCE00BE1C60 /* ResponsiveTextFieldViewController.swift */,
 				CEDC3D861E24C7D6003168EA /* Registration */,
 				CEDC3D851E24C7CC003168EA /* Login */,
 			);
@@ -122,7 +130,7 @@
 		CEDC3D851E24C7CC003168EA /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				CE63521D1E2899420047A870 /* LoginViewController.swift */,
+				17629F5E1E2D72DF00D230A6 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -226,7 +234,7 @@
 				CEDC3D7A1E24C554003168EA /* LaunchScreen.storyboard in Resources */,
 				CEDC3D891E24C80D003168EA /* Registration.storyboard in Resources */,
 				CEDC3D771E24C554003168EA /* Assets.xcassets in Resources */,
-				CEDC3D751E24C554003168EA /* Main.storyboard in Resources */,
+				17629F5D1E2D72CE00D230A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,33 +245,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE42E2F71E292DCE00BE1C60 /* ResponsiveTextFieldViewController.swift in Sources */,
+				17629F581E2D729700D230A6 /* AppDelegate.swift in Sources */,
 				CEDC3D911E25140D003168EA /* PhoneAcceptViewController.swift in Sources */,
 				CEDC3D8D1E2513F3003168EA /* RegistrationViewController.swift in Sources */,
 				CEDC3D931E251426003168EA /* SelectStoresViewController.swift in Sources */,
 				CE63521A1E2774790047A870 /* CheckBox.swift in Sources */,
+				17629F5B1E2D72A700D230A6 /* FZUIHelper.swift in Sources */,
 				CEF1EA091E2649CC00C8C518 /* VerificationCodeViewController.swift in Sources */,
 				CEF1EA0D1E26524000C8C518 /* ViewExtension.swift in Sources */,
 				CEDC3D991E2559D5003168EA /* SelectStoreTableViewCell.swift in Sources */,
 				CEDC3D8F1E251403003168EA /* UserInfoViewController.swift in Sources */,
 				CEDC3D951E254FB0003168EA /* Constants.swift in Sources */,
-				CEDC3D701E24C554003168EA /* AppDelegate.swift in Sources */,
+				17629F5F1E2D72DF00D230A6 /* LoginViewController.swift in Sources */,
 				CE42E2F91E29335F00BE1C60 /* AlertViewController.swift in Sources */,
-				CE63521E1E2899420047A870 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEDC3D731E24C554003168EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEDC3D741E24C554003168EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEDC3D781E24C554003168EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

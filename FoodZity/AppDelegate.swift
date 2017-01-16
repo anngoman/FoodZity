@@ -47,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func configureUI() {
     UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
     UINavigationBar.appearance().shadowImage = UIImage()
+    UIApplication.shared.statusBarStyle = .lightContent
   }
   
 }
