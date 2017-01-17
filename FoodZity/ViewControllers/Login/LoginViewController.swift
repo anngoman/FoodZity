@@ -19,21 +19,55 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordImageView: UIImageView!
     @IBOutlet weak var emailCheckImageView: UIImageView!
     @IBOutlet weak var passwordCheckImageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
         loginButton.backgroundColor = buttonColors.disable.value
         emailCheckImageView.image = nil
         passwordCheckImageView.image = nil
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+        addToolbar()
     }
     
+    @objc fileprivate func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    fileprivate func addToolbar() {
+        let keyboardDoneButtonView = UIToolbar()
+        keyboardDoneButtonView.barStyle = .default
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissKeyboard))
+        keyboardDoneButtonView.setItems([doneButton], animated: false)
+        keyboardDoneButtonView.sizeToFit()
+        emailTextField.inputAccessoryView = keyboardDoneButtonView
+        passwordTextField.inputAccessoryView = keyboardDoneButtonView
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: Notification.Name.UIKeyboardWillHide, object: nil)
+        notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: Notification.Name.UIKeyboardWillChangeFrame, object: nil)
+    }
+    
+    func adjustForKeyboard(notification: Notification) {
+        let userInfo = notification.userInfo!
+        
+        let keyboardScreenEndFrame = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardViewEndFrame = view.convert(keyboardScreenEndFrame, from: view.window)
+        
+        if notification.name == Notification.Name.UIKeyboardWillHide {
+            scrollView.contentInset = UIEdgeInsets.zero
+        } else {
+            scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardViewEndFrame.height, right: 0)
+        }
+        
+        scrollView.scrollIndicatorInsets = scrollView.contentInset
+        
+        let selectedRange = passwordTextField.frame
+        scrollView.scrollRectToVisible(selectedRange, animated: true)
+    }
 
     /*
     // MARK: - Navigation
@@ -65,6 +99,10 @@ class LoginViewController: UIViewController {
         //FIXME: - check email
         guard !(text?.isEmpty ?? true) else { return false }
         return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("11111111")
     }
 }
 
@@ -105,6 +143,16 @@ extension LoginViewController: UITextFieldDelegate {
         }
         
         loginButton(activate: (anotherTextField.text?.characters.count ?? 0) > 0 ? true : false)
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == emailTextField {
+            passwordTextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
         return true
     }
 

@@ -71,7 +71,10 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pcC-RD-BrG"/>
+                                                </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lf-e0-2je">
                                                 <rect key="frame" x="40" y="292" width="295" height="1"/>
@@ -87,7 +90,10 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="6Jr-ea-7eA"/>
+                                                </connections>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PN8-jX-AUT">
                                                 <rect key="frame" x="40" y="359" width="295" height="1"/>
@@ -285,6 +291,7 @@
                         <outlet property="passwordCheckImageView" destination="mBy-Av-mXx" id="1st-W4-vzK"/>
                         <outlet property="passwordImageView" destination="V4C-v9-5ON" id="NyW-ib-fDa"/>
                         <outlet property="passwordTextField" destination="irt-Vb-lOa" id="o70-1M-XUm"/>
+                        <outlet property="scrollView" destination="jn1-wM-af8" id="mn0-fu-6qr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
