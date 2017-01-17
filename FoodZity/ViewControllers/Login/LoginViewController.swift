@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         loginButton.backgroundColor = buttonColors.disable.value
         emailCheckImageView.image = nil
         passwordCheckImageView.image = nil
@@ -95,7 +96,7 @@ class LoginViewController: UIViewController {
     fileprivate func loginButton(activate: Bool) {
         loginButton.backgroundColor = activate ? buttonColors.enable.value : buttonColors.disable.value
     }
-    fileprivate func chechEmail(text: String?) -> Bool {
+    fileprivate func checkEmail(text: String?) -> Bool {
         //FIXME: - check email
         guard !(text?.isEmpty ?? true) else { return false }
         return true
@@ -124,7 +125,7 @@ extension LoginViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if  textField == emailTextField {
-            emailCheckImageView.image = chechEmail(text: textField.text) ? UIImage(named: "check") : UIImage(named: "check_faild")
+            emailCheckImageView.image = checkEmail(text: textField.text) ? UIImage(named: "check") : UIImage(named: "check_faild")
         } else {
             passwordCheckImageView.image = textField.text?.isEmpty ?? false ? UIImage(named: "check_faild") : UIImage(named: "check")
         }
