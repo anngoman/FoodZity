@@ -21,8 +21,14 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordCheckImageView: UIImageView!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    deinit {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         loginButton.backgroundColor = buttonColors.disable.value
         emailCheckImageView.image = nil
         passwordCheckImageView.image = nil
@@ -30,22 +36,21 @@ class LoginViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        addToolbar()
+        setToolBar()
+        subscribeToKeyboardNotification()
     }
     
     @objc fileprivate func dismissKeyboard() {
         view.endEditing(true)
     }
     
-    fileprivate func addToolbar() {
-        let keyboardDoneButtonView = UIToolbar()
-        keyboardDoneButtonView.barStyle = .default
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissKeyboard))
-        keyboardDoneButtonView.setItems([doneButton], animated: false)
-        keyboardDoneButtonView.sizeToFit()
-        emailTextField.inputAccessoryView = keyboardDoneButtonView
-        passwordTextField.inputAccessoryView = keyboardDoneButtonView
-        
+    fileprivate func setToolBar() {
+        emailTextField.inputAccessoryView = UIToolbar.doneToolBar(target: self, action: #selector(dismissKeyboard))
+        passwordTextField.inputAccessoryView = UIToolbar.doneToolBar(target: self, action: #selector(dismissKeyboard))
+    }
+    
+    //MARK: - Add Notifications
+    fileprivate func subscribeToKeyboardNotification() {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: Notification.Name.UIKeyboardWillHide, object: nil)
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: Notification.Name.UIKeyboardWillChangeFrame, object: nil)
@@ -79,6 +84,7 @@ class LoginViewController: UIViewController {
     }
     */
 
+    // MARK: - Actions
     @IBAction func didPressedLoginButton(_ sender: UIButton) {
     }
     
@@ -95,7 +101,7 @@ class LoginViewController: UIViewController {
     fileprivate func loginButton(activate: Bool) {
         loginButton.backgroundColor = activate ? buttonColors.enable.value : buttonColors.disable.value
     }
-    fileprivate func chechEmail(text: String?) -> Bool {
+    fileprivate func checkEmail(text: String?) -> Bool {
         //FIXME: - check email
         guard !(text?.isEmpty ?? true) else { return false }
         return true
@@ -103,11 +109,6 @@ class LoginViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("11111111")
-    }
-    
-    deinit {
-        let notificationCenter = NotificationCenter.default
-        notificationCenter.removeObserver(self)
     }
 }
 
@@ -124,7 +125,7 @@ extension LoginViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if  textField == emailTextField {
-            emailCheckImageView.image = chechEmail(text: textField.text) ? UIImage(named: "check") : UIImage(named: "check_faild")
+            emailCheckImageView.image = checkEmail(text: textField.text) ? UIImage(named: "check") : UIImage(named: "check_faild")
         } else {
             passwordCheckImageView.image = textField.text?.isEmpty ?? false ? UIImage(named: "check_faild") : UIImage(named: "check")
         }
@@ -147,7 +148,12 @@ extension LoginViewController: UITextFieldDelegate {
             anotherTextField = emailTextField
         }
         
-        loginButton(activate: (anotherTextField.text?.characters.count ?? 0) > 0 ? true : false)
+        if (anotherTextField.text?.characters.count ?? 0) > 0 {
+            loginButton(activate: true)
+        } else {
+            loginButton(activate: false)
+        }
+        
         return true
     }
     
